@@ -5,7 +5,7 @@
 int main(int argc, char **argv)
 {
     if (argc != 2) {
-        printf("Usage:\n\tftree DIRECTORY\n");
+        printf("Usage:\n\ttree DIRECTORY\n");
         return 0;
     }
     struct TreeNode *root = generate_ftree(argv[1]);
