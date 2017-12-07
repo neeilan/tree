@@ -4,7 +4,7 @@
 /*
  * Data structure for storing information about a single file.
  * For directories, contents is the linked list of files in the directory and hash is NULL.
- * For files, contents is NULL, and the hash is the hash of the file's contents.
+ * reg_file is set to 1 for non-dirs.
  * next is the next file in the directory (or NULL).
  */
 struct TreeNode {
