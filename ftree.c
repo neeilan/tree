@@ -16,11 +16,13 @@ struct TreeNode *_generate_ftree(const char *fname, const char *short_name);
 int is_dir(struct TreeNode* node);
 
 
-struct TreeNode *generate_ftree(const char *root_path) {
+struct TreeNode *generate_ftree(const char *root_path)
+{
     return _generate_ftree(root_path, root_path);
 }
 
-struct TreeNode *_generate_ftree(const char *fname, const char *short_name) {
+struct TreeNode *_generate_ftree(const char *fname, const char *short_name)
+{
     struct stat sb;
     DIR* p_dir;
     struct dirent* entry;
@@ -77,7 +79,6 @@ struct TreeNode *_generate_ftree(const char *fname, const char *short_name) {
 
     return root;
 }
-
 
 void add_node_props(struct TreeNode* node, const char* fname, int pms)
 {
