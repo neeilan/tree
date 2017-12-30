@@ -68,7 +68,6 @@ struct TreeNode *_generate_ftree(const char *fname, const char *short_name)
                     (root->contents)->next = old_head;
                 }
             }
-            root->contents = root->contents;
             closedir(p_dir);
             break;
         }
